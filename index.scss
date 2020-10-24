@@ -1,0 +1,150 @@
+/*Color*/
+$primary-color: hsl(179, 62%, 43%);
+$bright-yellow: hsl(71, 73%, 54%);
+$lighter-green: hsl(78, 90%, 90%);
+$light-green: hsl(179, 52%, 48%);
+$light-gray: hsl(204, 43%, 93%);
+$lighter-blue: hsl(218, 22%, 67%);
+$grid-shadow: hsla(210, 50%, 83%, 0.6);
+$btn-shadow: hsl(189, 52%, 37%, 0.6);
+
+/*Spacing*/
+$space-xxs: 2px;
+$space-xs: 4px;
+$space-sm: 8px;
+$space-md: 16px;
+$space-lg: 32px;
+$space-xl: 64px;
+
+$primary-type: 'Karla', sans-serif;
+
+html, body, main {
+	background-color: $light-gray;
+	font-family: $primary-type;
+	height: 100%;
+	width: 100%;
+}
+
+*, :after, :before {
+	background-color: inherit;
+	border: 0 solid;
+	box-sizing: border-box;
+	color: inherit;
+	font-family: inherit;
+	overflow-wrap: break-word;
+	overflow: scroll;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	justify-content: space-between;
+}
+
+
+.stack {
+	display: flex;
+	flex-direction: column;
+}
+
+.center {
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	border-radius: 9px;
+	box-shadow: 0 10px 20px 0px $grid-shadow;
+	margin: 0 $space-md;
+	max-width: 40ch;
+
+	.hero-section {
+		background-color: white;
+		color: $lighter-blue;
+		padding: $space-lg;
+
+		h3 {
+			color: $primary-color;
+		}
+		h4 {
+			color: $bright-yellow;
+		}
+	}
+	.bottom-grid {
+		background-color: $primary-color;
+		color: $light-gray;
+		width: 100%;
+
+		.sub-section {
+			padding: $space-lg;
+
+			h4 {
+				align-items: center;
+				color: $light-gray;
+				display: flex;
+				font-size: 2rem;
+				font-weight: 700;
+		
+				span {
+					font-size: 1rem;
+					font-weight: 400;
+					padding-left: $space-sm;
+					opacity: 0.6;
+				}
+			}
+			p {
+				margin-bottom: $space-md;
+			}
+			.sign-up-btn {
+				background-color: $bright-yellow;
+				border-radius: 3px;
+				box-shadow: 0 5px 10px 0px $btn-shadow;
+				color: $lighter-green;
+				font-weight: 700;
+				padding: $space-md;
+			}
+		}
+		.about-section {
+			padding: $space-lg;
+			background-color: $light-green;
+		}
+	}
+}
+
+li {
+	list-style-type: none;
+	line-height: 1.2rem;
+	text-decoration: none;
+	font-size: 0.825rem;
+	opacity: 0.8;
+}
+
+p {
+	line-height: 1.7rem;
+	opacity: 0.9;
+}
+
+h3 {
+	margin-bottom: $space-md;
+}
+
+h4 {
+	margin-bottom: $space-sm;
+}
+
+@media only screen and (min-width: 768px) {	
+	.container {
+		max-width: 65ch;
+	}
+
+	.bottom-grid {
+		flex-direction: row;
+		width: fit-content;
+		.sub-section {
+			width: 50%;
+		}
+		.about-section {
+			width: 50%;
+		}
+	}
+}

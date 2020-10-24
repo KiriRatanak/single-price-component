@@ -1,0 +1,128 @@
+/*Color*/
+/*Spacing*/
+html, body, main {
+  background-color: #e5eff5;
+  font-family: "Karla", sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+*, :after, :before {
+  background-color: inherit;
+  border: 0 solid;
+  box-sizing: border-box;
+  color: inherit;
+  font-family: inherit;
+  overflow-wrap: break-word;
+  overflow: scroll;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  justify-content: space-between;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  border-radius: 9px;
+  box-shadow: 0 10px 20px 0px rgba(190, 212, 233, 0.6);
+  margin: 0 16px;
+  max-width: 40ch;
+}
+.container .hero-section {
+  background-color: white;
+  color: #98a6bd;
+  padding: 32px;
+}
+.container .hero-section h3 {
+  color: #2ab2af;
+}
+.container .hero-section h4 {
+  color: #c0df34;
+}
+.container .bottom-grid {
+  background-color: #2ab2af;
+  color: #e5eff5;
+  width: 100%;
+}
+.container .bottom-grid .sub-section {
+  padding: 32px;
+}
+.container .bottom-grid .sub-section h4 {
+  align-items: center;
+  color: #e5eff5;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.container .bottom-grid .sub-section h4 span {
+  font-size: 1rem;
+  font-weight: 400;
+  padding-left: 8px;
+  opacity: 0.6;
+}
+.container .bottom-grid .sub-section p {
+  margin-bottom: 16px;
+}
+.container .bottom-grid .sub-section .sign-up-btn {
+  background-color: #c0df34;
+  border-radius: 3px;
+  box-shadow: 0 5px 10px 0px rgba(45, 129, 143, 0.6);
+  color: #effccf;
+  font-weight: 700;
+  padding: 16px;
+}
+.container .bottom-grid .about-section {
+  padding: 32px;
+  background-color: #3bbab8;
+}
+
+li {
+  list-style-type: none;
+  line-height: 1.2rem;
+  text-decoration: none;
+  font-size: 0.825rem;
+  opacity: 0.8;
+}
+
+p {
+  line-height: 1.7rem;
+  opacity: 0.9;
+}
+
+h3 {
+  margin-bottom: 16px;
+}
+
+h4 {
+  margin-bottom: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 65ch;
+  }
+
+  .bottom-grid {
+    flex-direction: row;
+    width: fit-content;
+  }
+  .bottom-grid .sub-section {
+    width: 50%;
+  }
+  .bottom-grid .about-section {
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
